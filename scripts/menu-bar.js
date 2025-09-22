@@ -1,3 +1,26 @@
+const mobileMenu = document.getElementById('mobile-menu');
+const nav = document.querySelector('.nav');
+
+// Botão do menu
+mobileMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+// Função para rolagem suave e fechar menu
+function handleLink(selector, targetSelector) {
+    document.querySelector(selector).addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(targetSelector).scrollIntoView({ behavior: 'smooth' });
+        nav.classList.remove('active');
+    });
+}
+
+handleLink('.link-hero', '.hero');
+handleLink('.link-conteudo', '.conteudo-section');
+handleLink('.link-depoimentos', '.depoimentos-section');
+handleLink('.link-contato', '.footer-section');
+
+
 const cards = document.querySelectorAll('.desafio-card');
 const finalBtn = document.querySelector('.btn-desafio-final');
 const progressBar = document.querySelector('.progress-bar');
@@ -12,13 +35,13 @@ cards.forEach(card => {
         option.addEventListener('click', () => {
             const correct = option.getAttribute('data-correct') === 'true';
 
-            if(correct){
+            if (correct) {
                 feedback.innerHTML = '<i class="fas fa-check-circle"></i> Acertou!';
                 feedback.style.color = '#4CAF50';
                 retryBtn.style.display = 'none';
 
                 setTimeout(() => {
-                    if(currentCard < cards.length - 1){
+                    if (currentCard < cards.length - 1) {
                         cards[currentCard].style.display = 'none';
                         currentCard++;
                         cards[currentCard].style.display = 'flex';
