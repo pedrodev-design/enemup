@@ -30,7 +30,7 @@
         const depoimentosSwiperEl = document.querySelector('.depoimentos-swiper');
         if (depoimentosSwiperEl) {
             createElegantSwiper(depoimentosSwiperEl, {
-                effect: 'coverflow', // efeito elegante
+                effect: 'coverflow',
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 0,
