@@ -12,12 +12,12 @@
         // Função para criar Swiper elegante
         function createElegantSwiper(swiperEl, options = {}) {
             new Swiper(swiperEl, {
-                slidesPerView: 'auto',   // mostra slides conforme tamanho do conteúdo
+                slidesPerView: 'auto', 
                 spaceBetween: 20,
                 loop: true,
                 centeredSlides: true,
                 grabCursor: true,
-                speed: 800,               // velocidade da transição (ms)
+                speed: 800,              
                 pagination: {
                     el: swiperEl.querySelector('.swiper-pagination'),
                     clickable: true
