@@ -19,6 +19,11 @@
     <link rel="icon" type="image/svg+xml" href="./assets/icons/brain.svg">
     <link rel="shortcut icon" href="./assets/icons/brain.svg" type="image/svg+xml">
 
+    <!-- Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+
 </head>
 
 <body>
@@ -37,7 +42,7 @@
                 </ul>
             </nav>
             <div class="header-buttons">
-                <a href="#comprar" class="btn btn-primary">Comprar Apostila</a>
+                <a href="https://pay.cakto.com.br/3cu8zfc_579794" class="btn btn-primary">Comprar Apostila</a>
             </div>
             <div class="mobile-menu" id="mobile-menu">
                 <i class="fa-solid fa-bars"></i>
@@ -53,7 +58,7 @@
                 <p>Estude de forma completa e estratégica! Nossa Apostila Bernoulli reúne teoria detalhada, exercícios
                     comentados e simulados atualizados, garantindo que você esteja pronto para alcançar sua melhor nota
                     no ENEM.</p>
-                <a href="#comprar" class="btn btn-primary">Comprar Agora</a>
+                <a href="https://pay.cakto.com.br/3cu8zfc_579794" class="btn btn-primary">Comprar Agora</a>
             </div>
             <div class="hero-image">
                 <img src="./assets/images/estudante.png" alt="Hero Image">
@@ -209,7 +214,8 @@
             <div class="cta-box">
                 <span class="preco-antigo">R$ 79,90</span>
                 <span class="preco">R$ 49,90</span>
-                <a href="#" class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar Agora</a>
+                <a href="https://pay.cakto.com.br/3cu8zfc_579794" class="btn-comprar"><i
+                        class="fas fa-shopping-cart"></i> Comprar Agora</a>
 
                 <ul class="bonus-list">
                     <li><i class="fas fa-file-pdf"></i> Inclui versão digital em PDF</li>
@@ -245,27 +251,66 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter-section">
+
+    <section class="desafio-premium-section">
         <div class="container">
-            <h2>Receba dicas exclusivas para o ENEM</h2>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Digite seu e-mail" required>
-                <button type="submit">Inscrever-se</button>
-            </form>
+            <h2>Teste seus conhecimentos ENEM!</h2>
+            <p>Responda ao desafio rápido e veja como está seu desempenho.</p>
+
+            <div class="desafio-container">
+                <div class="desafio-card" data-question="1">
+                    <h3>1. Qual é a fórmula da velocidade média?</h3>
+                    <ul class="desafio-options">
+                        <li data-correct="false">V = S x T</li>
+                        <li data-correct="true">V = ΔS / ΔT</li>
+                        <li data-correct="false">V = T / S</li>
+                        <li data-correct="false">V = S² / T</li>
+                    </ul>
+                    <p class="desafio-feedback"></p>
+                    <button class="btn-retry">Tentar novamente</button>
+                </div>
+
+                <div class="desafio-card" data-question="2" style="display:none;">
+                    <h3>2. Qual é a capital do Brasil?</h3>
+                    <ul class="desafio-options">
+                        <li data-correct="true">Brasília</li>
+                        <li data-correct="false">Rio de Janeiro</li>
+                        <li data-correct="false">São Paulo</li>
+                        <li data-correct="false">Salvador</li>
+                    </ul>
+                    <p class="desafio-feedback"></p>
+                    <button class="btn-retry">Tentar novamente</button>
+                </div>
+
+                <div class="desafio-card" data-question="3" style="display:none;">
+                    <h3>3. Qual elemento químico tem símbolo “O”?</h3>
+                    <ul class="desafio-options">
+                        <li data-correct="true">Oxigênio</li>
+                        <li data-correct="false">Ouro</li>
+                        <li data-correct="false">Ósmio</li>
+                        <li data-correct="false">Prata</li>
+                    </ul>
+                    <p class="desafio-feedback"></p>
+                    <button class="btn-retry">Tentar novamente</button>
+                </div>
+            </div>
+
+            <div class="desafio-progress">
+                <div class="progress-bar"></div>
+            </div>
+
+            <a href="https://pay.cakto.com.br/3cu8zfc_579794" class="btn btn-primary btn-desafio-final"
+                style="display:none;">
+                Quero a Apostila Completa
+            </a>
         </div>
-    </section>
+    </section>  
+
 
     <!-- Footer -->
     <footer class="footer-section">
-        <div class="container footer-container">
-            <div class="footer-links">
-                <a href="#">Início</a>
-                <a href="#">Conteúdo</a>
-                <a href="#">Depoimentos</a>
-                <a href="#">Contato</a>
-            </div>
-            <p class="footer-copy">© 2025 Apostila ENEM - Todos os direitos reservados</p>
+
+        <p class="footer-copy">© 2025 Apostila ENEM - Todos os direitos reservados</p>
         </div>
     </footer>
 

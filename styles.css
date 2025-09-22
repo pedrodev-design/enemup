@@ -428,9 +428,6 @@ input:focus {
 /* ==========================
    CTA / Preço Premium
 ========================== */
-/* ==========================
-   CTA / Preço Premium
-========================== */
 .cta-section {
     padding: 80px 20px;
     background: linear-gradient(135deg, #BE76F5, #9A4FFF);
@@ -580,49 +577,153 @@ input:focus {
 }
 
 
-/* Newsletter */
-.newsletter-section {
+/* Quiz Premium */
+.desafio-premium-section {
     padding: 80px 20px;
-    background: #BE76F5;
+    background: linear-gradient(135deg, #BE76F5, #9A4FFF);
     color: #fff;
     text-align: center;
 }
 
-.newsletter-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+.desafio-premium-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
-.newsletter-form {
+.desafio-premium-section p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Container dos cards */
+.desafio-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Cards em branco */
+.desafio-card {
+    background: #fff;
+    color: #333;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desafio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.desafio-card h3 {
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Opções do quiz */
+.desafio-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
-.newsletter-form input[type="email"] {
-    padding: 15px 20px;
+.desafio-options li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f4f4f4;
+    padding: 14px 20px;
     border-radius: 50px;
-    border: none;
-    width: 300px;
-    max-width: 100%;
-    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.newsletter-form button {
+.desafio-options li:hover {
+    background: #e0e0e0;
+}
+
+/* Feedback */
+.desafio-feedback {
+    font-weight: 600;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.05rem;
+}
+
+/* Botão tentar novamente */
+.btn-retry {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    background: #FF4C4C;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+    align-self: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-retry:hover {
+    background: #FF6666;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de progresso */
+.desafio-progress {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* Botão final */
+.btn-desafio-final {
+    margin-top: 20px;
+    font-size: 1.1rem;
     padding: 15px 30px;
     border-radius: 50px;
-    border: none;
-    background: #9A4FFF;
+    background: linear-gradient(135deg, #9A4FFF, #BE76F5);
     color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    display: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-.newsletter-form button:hover {
-    background: #B671FF;
+.btn-desafio-final:hover {
+    background: linear-gradient(135deg, #B671FF, #A74BFF);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+
 
 /* Footer */
 .footer-section {
@@ -729,9 +830,11 @@ input:focus {
     font-weight: 500;
 }
 
+
+
 .swiper {
-    position: relative;    
-    padding-bottom: 50px;   
+    position: relative;
+    padding-bottom: 50px;
 }
 
 .swiper .swiper-pagination {
@@ -751,7 +854,7 @@ input:focus {
 
 
 .conteudo-grid.swiper .swiper-pagination-bullet {
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .conteudo-grid.swiper .swiper-pagination-bullet-active {
@@ -789,12 +892,12 @@ input:focus {
 
     /* Ajuste dos cards */
     .hero-stats {
-        top: 10%; 
+        top: 10%;
         gap: 0.8rem;
     }
 
     .hero-stats .stat {
-        transform: scale(0.6); 
+        transform: scale(0.6);
     }
 }
 
