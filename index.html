@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila ENEM Bernoulli</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-brain"></i> EnemUp
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="link-hero">Início</a></li>
+                    <li><a href="#" class="link-conteudo">Conteúdo</a></li>
+                    <li><a href="#" class="link-depoimentos">Depoimentos</a></li>
+                    <li><a href="#" class="link-contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <a href="#comprar" class="btn btn-primary">Comprar Apostila</a>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Domine o <span>ENEM</span> com a Apostila Bernoulli</h1>
+                <p>Estude de forma completa e estratégica! Nossa Apostila Bernoulli reúne teoria detalhada, exercícios
+                    comentados e simulados atualizados, garantindo que você esteja pronto para alcançar sua melhor nota
+                    no ENEM.</p>
+                <a href="#comprar" class="btn btn-primary">Comprar Agora</a>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/images/estudante.png" alt="Hero Image">
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="ri-book-line"></i>
+                        <p>Mais de 500 páginas de conteúdo</p>
+                    </div>
+                    <div class="stat">
+                        <i class="ri-pencil-line"></i>
+                        <p>Exercícios comentados</p>
+                    </div>
+                    <div class="stat">
+                        <i class="ri-bar-chart-line"></i>
+                        <p>Simulados atualizados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parcerias-section">
+            <div class="container parcerias-container">
+                <h2>Nossos Parceiros Educacionais</h2>
+                <div class="parcerias">
+                    <div class="parceria">
+                        <i class="fa-solid fa-school"></i>
+                        <span>Instituto Bernoulli</span>
+                    </div>
+                    <div class="parceria">
+                        <i class="fa-solid fa-university"></i>
+                        <span>INEP / MEC</span>
+                    </div>
+                    <div class="parceria">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Descomplica</span>
+                    </div>
+                    <div class="parceria">
+                        <i class="fa-solid fa-chalkboard-teacher"></i>
+                        <span>Khan Academy</span>
+                    </div>
+                    <div class="parceria">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Cursinho Anglo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios-section">
+        <div class="container">
+            <h2>Por que escolher nossa apostila ENEM?</h2>
+
+            <!-- Swiper para mobile -->
+            <div class="beneficios-grid swiper">
+                <div class="swiper-wrapper">
+                    <div class="beneficio-item swiper-slide">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Conteúdo Atualizado</h3>
+                        <p>Toda a apostila é revisada com base nos últimos exames do ENEM.</p>
+                    </div>
+                    <div class="beneficio-item swiper-slide">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h3>Exercícios Comentados</h3>
+                        <p>Mais de 500 questões com resoluções passo a passo.</p>
+                    </div>
+                    <div class="beneficio-item swiper-slide">
+                        <i class="fa-solid fa-chalkboard-teacher"></i>
+                        <h3>Metodologia Didática</h3>
+                        <p>Explicações claras e objetivas para facilitar seu aprendizado.</p>
+                    </div>
+                    <div class="beneficio-item swiper-slide">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Foco no Resultado</h3>
+                        <p>Estratégias de estudo para otimizar seu tempo até a prova.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Programático -->
+    <section class="conteudo-section">
+        <div class="container">
+            <h2>O que você vai encontrar na apostila?</h2>
+
+            <!-- Swiper para mobile -->
+            <div class="conteudo-grid swiper">
+                <div class="swiper-wrapper">
+                    <div class="conteudo-item swiper-slide">
+                        <i class="fa-solid fa-square-root-alt"></i>
+                        <h3>Matemática</h3>
+                        <p>Álgebra, Geometria, Estatística, Probabilidade e muito mais.</p>
+                    </div>
+                    <div class="conteudo-item swiper-slide">
+                        <i class="fa-solid fa-flask"></i>
+                        <h3>Ciências da Natureza</h3>
+                        <p>Biologia, Física e Química com resumos e exercícios.</p>
+                    </div>
+                    <div class="conteudo-item swiper-slide">
+                        <i class="fa-solid fa-language"></i>
+                        <h3>Linguagens</h3>
+                        <p>Interpretação de textos, Gramática e Literatura.</p>
+                    </div>
+                    <div class="conteudo-item swiper-slide">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h3>Ciências Humanas</h3>
+                        <p>História, Geografia, Filosofia e Sociologia.</p>
+                    </div>
+                    <div class="conteudo-item swiper-slide">
+                        <i class="fa-solid fa-pen-fancy"></i>
+                        <h3>Redação</h3>
+                        <p>Técnicas práticas para desenvolver textos nota 1000.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos-section">
+        <div class="container">
+            <h2>O que nossos alunos dizem?</h2>
+            <div class="swiper depoimentos-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide depoimento-item">
+                        <p>“Consegui aumentar minha nota em 150 pontos depois que comecei a usar a apostila!”</p>
+                        <span>- Maria Eduarda, aprovada em Medicina</span>
+                    </div>
+                    <div class="swiper-slide depoimento-item">
+                        <p>“O material é muito bem explicado e direto ao ponto. Super recomendo.”</p>
+                        <span>- Lucas Pereira, aprovado em Direito</span>
+                    </div>
+                    <div class="swiper-slide depoimento-item">
+                        <p>“Me ajudou a organizar meus estudos e conquistar minha vaga.”</p>
+                        <span>- Ana Carolina, aprovada em Engenharia</span>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preço / CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Garanta já sua Apostila ENEM</h2>
+            <p>Invista no seu futuro com um material completo, atualizado e pensado para você passar de primeira!</p>
+
+            <div class="cta-box">
+                <span class="preco-antigo">R$ 79,90</span>
+                <span class="preco">R$ 49,90</span>
+                <a href="#" class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar Agora</a>
+
+                <ul class="bonus-list">
+                    <li><i class="fas fa-file-pdf"></i> Inclui versão digital em PDF</li>
+                    <li><i class="fas fa-clock"></i> Conteúdo resumido para estudar em 1 mês</li>
+                    <li><i class="fas fa-lightbulb"></i> Dicas exclusivas de resolução de questões</li>
+                </ul>
+            </div>
+
+            <div class="urgencia">
+                <p><i class="fas fa-bolt"></i> Promoção por tempo limitado! Garanta sua apostila antes que acabe.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>O material é atualizado para o ENEM 2025?</h3>
+                <p>Sim, todo o conteúdo segue a matriz de referência do ENEM 2025.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Recebo versão digital?</h3>
+                <p>Sim, você recebe acesso imediato ao PDF além da versão impressa.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Tem garantia?</h3>
+                <p>Sim, você tem 7 dias para testar. Se não gostar, devolvemos seu dinheiro.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Receba dicas exclusivas para o ENEM</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Digite seu e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-links">
+                <a href="#">Início</a>
+                <a href="#">Conteúdo</a>
+                <a href="#">Depoimentos</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="footer-copy">© 2025 Apostila ENEM - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./scripts/menu-bar.js"></script>
+    <script src="./scripts/swipper.js"></script>
+    <script src="./scripts/links.js"></script>
+    <script>
+
+
+
+
+    </script>
+</body>
+
+</html>
