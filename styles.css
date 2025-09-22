@@ -729,19 +729,34 @@ input:focus {
     font-weight: 500;
 }
 
-/* Cor das bolinhas */
-.swiper-pagination-bullet {
+.swiper {
+    position: relative;    
+    padding-bottom: 50px;   
+}
+
+.swiper .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper .swiper-pagination-bullet {
     background-color: blue;
-    /* muda a cor das bolinhas inativas */
 }
 
-/* Bolinha ativa */
-.swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
     background-color: #9A4FFF;
-    /* muda a bolinha selecionada */
 }
 
 
+.conteudo-grid.swiper .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.conteudo-grid.swiper .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
 
 /* ==========================
    RESPONSIVO
