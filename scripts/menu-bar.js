@@ -1,6 +1,8 @@
+const menuLinks = document.querySelectorAll('.menu a');
+const menu = document.querySelector('.menu');
 
-        const mobileMenu = document.getElementById('mobile-menu');
-        const nav = document.querySelector('.nav');
-        mobileMenu.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+    });
+});
